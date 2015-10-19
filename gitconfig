@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+[user]
+	name = thomas
+	email = my-email@gmail.com
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[core]
+	excludesfile = /Users/t/.gitignore_global
