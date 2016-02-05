@@ -165,9 +165,6 @@ create-account ()
 # Always use rsync with Vagrant
 export MOUNT_RSYNC=true
 
-# Brew api token
-export HOMEBREW_GITHUB_API_TOKEN=9506ee7ae1523c47e4793112c71e76a5191fdce0
-
 # Don't share history when there are multiple panes
 unsetopt inc_append_history
 unsetopt share_history
