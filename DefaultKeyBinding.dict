@@ -1,0 +1,6 @@
+// https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
+{
+  "^u" = "deleteToBeginningOfLine:";
+  "^k" = "deleteToEndOfLine:";
+  "^w" = "deleteWordBackward:";
+}
