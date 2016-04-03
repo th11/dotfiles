@@ -1,0 +1,15 @@
+alias zshconfig="vi ~/.zshrc"
+alias gcm='git commit -m'
+alias gst='git status'
+alias gd='git diff'
+alias gaa='git add -A'
+alias be='bundle exec'
+alias gl='git log'
+alias gls='git log --pretty=format:"%h - %an, %ar : %s"'
+alias mkdir='mkdir -p'
+alias e='$EDITOR'
+alias v='$VISUAL'
+alias b='bundle'
+alias damn='fuck'
+alias rm=rm -i
+alias weather='curl -4 http://wttr.in/San_Fransisco'
