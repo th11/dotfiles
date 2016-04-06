@@ -13,3 +13,4 @@ alias b='bundle'
 alias damn='fuck'
 alias rm=rm -i
 alias weather='curl -4 http://wttr.in/San_Fransisco'
+alias myip='curl ipinfo.io/ip'
