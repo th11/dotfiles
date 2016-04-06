@@ -102,20 +102,7 @@ SAVEHIST=4096
 ########################
 # aliases
 ########################
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gcm='git commit -m'
-alias gst='git status'
-alias gd='git diff'
-alias gaa='git add -A'
-alias be='bundle exec'
-alias gl='git log'
-alias gls='git log --pretty=format:"%h - %an, %ar : %s"'
-alias mkdir="mkdir -p"
-alias e="$EDITOR"
-alias v="$VISUAL"
-alias b="bundle"
-alias damn="fuck"
+. ~/.aliases
 
 ########################
 # other configs
