@@ -38,6 +38,8 @@ set hidden                      " Buffers can exist in the background
 set history=1000                " Store lots of :cmdline history
 "Dont dump distracting text to terminal during searches!
 set shellpipe=2>/dev/null>
+set textwidth=0 
+set wrapmargin=0
 
 " Send more characters for redraws
 set ttyfast
