@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-surround'    " surround text ex. cs' if on a word surrounds
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -29,6 +30,8 @@ set nomodeline
 syntax on
 syntax enable
 set t_Co=256
+set background=dark
+colorscheme solarized
 
 set encoding=utf-8              " standard encoding
 set number                      " line numbers
