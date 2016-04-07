@@ -18,6 +18,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-surround'    " surround text ex. cs' if on a word surrounds
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
