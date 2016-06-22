@@ -1,5 +1,6 @@
 alias zshconfig="vi ~/.zshrc"
 alias gcm='git commit -m'
+alias gcma='git commit --amend'
 alias gst='git status'
 alias gd='git diff'
 alias gaa='git add -A'
@@ -14,3 +15,4 @@ alias damn='fuck'
 alias rm=rm -i
 alias weather='curl -4 http://wttr.in/San_Fransisco'
 alias myip='curl ipinfo.io/ip'
+alias folder-size='du -hd 0'
