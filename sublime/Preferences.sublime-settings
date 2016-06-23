@@ -4,6 +4,7 @@
   "color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
   "copy_with_empty_selection": true,
   "drag_text": false,
+  "caret_extra_width": 1,
   "draw_minimap_border": true,
   "enable_tab_scrolling": false,
   "font_face": "Source Code Pro",
@@ -41,5 +42,39 @@
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": false,
   "vintage_start_in_command_mode": true,
-  "word_wrap": false
+  "word_wrap": false,
+    "file_exclude_patterns":
+  [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.class",
+    "*.psd",
+    "*.db",
+    "*.sublime-workspace",
+    "*.scssc",
+    "*.gem"
+  ],
+    "folder_exclude_patterns":
+  [
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "node_modules",
+    "tmp"
+  ],
 }
