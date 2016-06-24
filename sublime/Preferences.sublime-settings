@@ -77,4 +77,5 @@
     "node_modules",
     "tmp"
   ],
+  "ensure_newline_at_eof_on_save": true
 }
