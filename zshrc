@@ -105,52 +105,25 @@ SAVEHIST=4096
 . ~/.aliases
 
 ########################
+# functions
+########################
+. ~/.functions
+
+########################
+# company_configs
+########################
+. ~/.company_configs
+
+########################
 # other configs
 ########################
 
 # Use z
 # . ~/.env/bin/z/z.sh
 
-if [ -f $HOME/Code/zendesk/docker-images/dockmaster/zdi.sh ]; then
-    source $HOME/Code/zendesk/docker-images/dockmaster/zdi.sh
-fi
-
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
-
-# fast accounts creation
-random-string ()
-{
-  #  cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
-  perl -pe 'tr/A-Za-z0-9//dc;' < /dev/urandom | fold -w ${1:-32} | head -n 1; echo
-}
-
-account_params ()
-{
-   subdomain='z3n-thomas-test'`random-string 10`;
-   owner_name='Thomas New Owner '`random-string 5`;
-   account_name='z3n New Account '`random-string 10`;
-   email='thomas@zndsk.com';
-   help_desk_size='1-9';
-   echo "{\"owner\":{\"name\":\"$owner_name\", \"email\":\"$email\", \"is_verified\":\"1\", \"password\":\"123456\"},\"address\":{\"phone\":\"123-456-0000\"}, \"account\":{\"name\":\"$account_name\", \"source\":\"Marketing Site\",\"help_desk_size\":\"$help_desk_size\",\"language\":\"en-US\",\"subdomain\":\"$subdomain\"}}"
-}
-
-create-account ()
-{
-   domain='zd-dev';
-   if [ ${#1} -gt 0 ]; then
-       domain=$1;
-   fi;
-   curl_res=$(echo \'`account_params`\' | xargs curl "https://signup.$domain.com/api/v2/accounts_fast.json" -k -H "Content-Type:application/json" -v -X POST -d);
-   echo curl results: $curl_res;
-   verif_link=$(echo $curl_res | grep -o '"owner_verification_link":.*' | sed 's/"owner_verification_link":"\(.*\)"}/\1/');
-   echo verification link: $verif_link;
-   open $verif_link
-}
-
-# Always use rsync with Vagrant
-export MOUNT_RSYNC=true
 
 # Don't share history when there are multiple panes
 unsetopt inc_append_history
@@ -171,6 +144,3 @@ eval "$(thefuck --alias)"
 
 export NVM_DIR="/Users/thofer/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# ADDED BY DOCKER-IMAGES
-source /Users/thofer/Code/zendesk/docker-images/dockmaster/zdi.sh
