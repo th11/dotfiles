@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract ruby rails brew osx z zsh-syntax-highlighting)
+plugins=(git extract ruby rails brew osx z zsh-syntax-highlighting vi-mode)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -144,3 +144,16 @@ eval "$(thefuck --alias)"
 
 export NVM_DIR="/Users/thofer/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# vi mode tweaks
+export KEYTIMEOUT=1
+# allow ctrl-r for searching history backward (insert mode)
+bindkey '^r' history-incremental-search-backward
+# allow ctrl-s for searching history forward (insert mode)
+bindkey '^s' history-incremental-search-forward
+# allow ctrl-a to go to beginning of line (insert mode)
+bindkey '^a' beginning-of-line
+# allow ctrl-e to go to end of line (insert mode)
+bindkey '^e' end-of-line
+
+bindkey '^k' kill-line
