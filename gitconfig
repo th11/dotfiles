@@ -6,6 +6,7 @@
 [color]
   ui = auto
 [alias]
+  lol = log --graph --decorate --pretty=format:'%d %C(yellow)%h%Creset %an:%ar %C(green)->%Creset %s' --abbrev-commit --all
   ci = commit -v
   co = checkout
   st = status
