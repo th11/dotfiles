@@ -16,3 +16,4 @@ alias rm=rm -i
 alias weather='curl -4 http://wttr.in/San_Fransisco'
 alias myip='curl ipinfo.io/ip'
 alias folder-size='du -hd 0'
+alias clean_branch='gb | grep -v master | xargs git branch -D'
