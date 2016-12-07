@@ -43,6 +43,12 @@
   "trim_trailing_white_space_on_save": false,
   "vintage_start_in_command_mode": true,
   "word_wrap": false,
+  "binary_file_patterns": [
+  "*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip",
+  "node_modules/**",
+  "bower_components/**",
+  "vendor/**"
+  ],
     "file_exclude_patterns":
   [
     "*.pyc",
@@ -73,9 +79,7 @@
     ".svn",
     ".git",
     ".hg",
-    "CVS",
-    "node_modules",
-    "tmp"
+    "CVS"
   ],
   "ensure_newline_at_eof_on_save": true,
   "show_full_path":: true
