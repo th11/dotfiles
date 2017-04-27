@@ -1,3 +1,5 @@
 [
   { "keys": ["super+\\"], "command": "toggle_side_bar" },
+  { "keys": ["command+v"], "command": "paste_and_indent"},
+  { "keys": ["command+shift+v"], "command": "paste"}
 ]
