@@ -1,0 +1,11 @@
+# install via homebrew
+htop # replacement for the top command
+cheat # cheatsheets for shell commands
+tig # Text mode interface for git
+thefuck # command correction helper
+trash # move files to trash
+hub # wrapper for git that makes it easier to work with GitHub
+httpie # modern curl alternative
+the_silver_searcher # ag -> Code-searching tool similar to ack and grep
+lunchy # wrapper for launchctl
+tldr # simplified man pages
