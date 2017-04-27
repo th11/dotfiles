@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+ #Path to your oh-my-zsh installation.
 export ZSH=/Users/thofer/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -7,21 +7,8 @@ export ZSH=/Users/thofer/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -47,7 +34,7 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+# Example format: plugins=(rails git textmate ruby lighthouse vi-mode)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git extract ruby rails brew osx z zsh-syntax-highlighting vi-mode)
 
@@ -86,15 +73,12 @@ export CLICOLOR=1
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
+########################
 # history settings
-setopt hist_ignore_all_dups inc_append_history
-HISTFILE=~/.zhistory
-HISTSIZE=4096
-SAVEHIST=4096
-
-## awesome cd movements from zshkit
-# setopt autocd autopushd pushdminus pushdsilent pushdtohome cdablevars
-# DIRSTACKSIZE=5
+########################
+# https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/history.zsh
+HISTSIZE=1000000
+SAVEHIST=1000000
 
 ## Enable extended globbing
 # setopt extendedglob
@@ -115,35 +99,28 @@ SAVEHIST=4096
 . ~/.company_configs
 
 ########################
+# tmp configs
+########################
+. ~/.tmpconfigs
+
+########################
 # other configs
 ########################
-
-# Use z
-# . ~/.env/bin/z/z.sh
 
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
-
-# Don't share history when there are multiple panes
-unsetopt inc_append_history
-unsetopt share_history
 
 # Pure prompt
 autoload -U promptinit && promptinit
 prompt pure
 
 # fix github for mac errors
-export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # thefuck config
-
 eval "$(thefuck --alias)"
-
-export NVM_DIR="/Users/thofer/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # vi mode tweaks
 export KEYTIMEOUT=1
@@ -155,5 +132,12 @@ bindkey '^s' history-incremental-search-forward
 bindkey '^a' beginning-of-line
 # allow ctrl-e to go to end of line (insert mode)
 bindkey '^e' end-of-line
-
 bindkey '^k' kill-line
+bindkey "^X^E" edit-command-line
+##
+
+# go lang
+export PATH=$PATH:/usr/local/go/bin
+
+# run ssh add
+ssh-add -A > /dev/null 2>&1
