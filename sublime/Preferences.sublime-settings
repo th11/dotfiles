@@ -1,55 +1,36 @@
 {
   "always_show_minimap_viewport": true,
+  "binary_file_patterns":
+  [
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.ttf",
+    "*.tga",
+    "*.dds",
+    "*.ico",
+    "*.eot",
+    "*.pdf",
+    "*.swf",
+    "*.jar",
+    "*.zip",
+    "node_modules/**",
+    "bower_components/**",
+    "vendor/**",
+    "tmp/**"
+  ],
+  "bold_folder_labels": false,
+  "caret_extra_width": 1,
   "close_windows_when_empty": false,
-  "color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
+  "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night-Eighties (SL).tmTheme",
   "copy_with_empty_selection": true,
   "drag_text": false,
-  "caret_extra_width": 1,
   "draw_minimap_border": true,
+  "draw_white_space": "all",
   "enable_tab_scrolling": false,
-  "font_face": "Source Code Pro",
-  "font_options":
-  [
-    "gray_antialias",
-    "subpixel_antialias"
-  ],
-  "font_size": 14,
-  "highlight_line": true,
-  "highlight_modified_tabs": true,
-  "ignored_packages":
-  [
-  ],
-  "indent_guide_options":
-  [
-    "draw_normal",
-    "draw_active"
-  ],
-  "line_padding_bottom": 0,
-  "line_padding_top": 0,
-  "predawn_findreplace_small": true,
-  "predawn_quick_panel_small": true,
-  "predawn_sidebar_arrows": false,
-  "predawn_sidebar_narrow": false,
-  "predawn_sidebar_xsmall": true,
-  "predawn_tabs_active_underline": true,
-  "predawn_tabs_small": true,
-  "preview_on_click": false,
-  "scroll_past_end": false,
-  "scroll_speed": 5.0,
-  "show_full_path": false,
-  "tab_size": 2,
-  "theme": "predawn-DEV.sublime-theme",
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": false,
-  "vintage_start_in_command_mode": true,
-  "word_wrap": false,
-  "binary_file_patterns": [
-  "*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip",
-  "node_modules/**",
-  "bower_components/**",
-  "vendor/**"
-  ],
-    "file_exclude_patterns":
+  "ensure_newline_at_eof_on_save": true,
+  "file_exclude_patterns":
   [
     "*.pyc",
     "*.pyo",
@@ -72,15 +53,70 @@
     "*.db",
     "*.sublime-workspace",
     "*.scssc",
-    "*.gem"
+    "*.gem",
+    "*.woff",
+    "*.woff2",
+    "*.mp3"
   ],
-    "folder_exclude_patterns":
+  "findreplace_small": true,
+  "folder_exclude_patterns":
   [
     ".svn",
     ".git",
     ".hg",
-    "CVS"
+    "CVS",
+    "tmp"
   ],
-  "ensure_newline_at_eof_on_save": true,
-  "show_full_path":: true
+  "font_face": "Source Code Pro",
+  "font_options":
+  [
+    "gray_antialias",
+    "subpixel_antialias"
+  ],
+  "font_size": 14,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "line_padding_bottom": 0,
+  "line_padding_top": 0,
+  "match_brackets_content": false,
+  "match_selection": false,
+  "match_tags": false,
+  "material_theme_compact_panel": true,
+  "material_theme_compact_sidebar": true,
+  "material_theme_contrast_mode": true,
+  "material_theme_disable_folder_animation": true,
+  "material_theme_small_statusbar": true,
+  "material_theme_small_tab": true,
+  "material_theme_tabs_autowidth": true,
+  "material_theme_tabs_separator": true,
+  "open_files_in_new_window": false,
+  "overlay_scroll_bars": "enabled",
+  "predawn_findreplace_small": true,
+  "predawn_quick_panel_small": true,
+  "predawn_sidebar_arrows": false,
+  "predawn_sidebar_narrow": false,
+  "predawn_sidebar_xsmall": true,
+  "predawn_tabs_active_underline": true,
+  "predawn_tabs_small": true,
+  "preview_on_click": false,
+  "scroll_past_end": true,
+  "scroll_speed": 5.0,
+  "show_full_path": true,
+  "sidebar_default": true,
+  "sidebar_font_small": true,
+  "tab_size": 2,
+  "tabs_small": true,
+  "theme": "predawn-DEV.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "vintage_start_in_command_mode": true,
+  "word_wrap": false
 }
