@@ -15,7 +15,6 @@ alias damn='fuck'
 alias rm=rm -i
 alias weather='curl -4 http://wttr.in/San_Fransisco'
 alias myip='curl ipinfo.io/ip'
-alias clear_watchman='watchman watch-del /Users/thofer/Code/zendesk/zendesk_console ; watchman watch-project /Users/thofer/Code/zendesk/zendesk_console'
 alias start_zdi='~/zdi-restart.sh'
 alias reload='echo "reloading config ~/.zshrc" && source ~/.zshrc'
 alias clean_branch='gb | grep -v master | xargs git branch -D'
