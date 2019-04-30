@@ -9,3 +9,4 @@ httpie # modern curl alternative
 the_silver_searcher # ag -> Code-searching tool similar to ack and grep
 lunchy # wrapper for launchctl
 tldr # simplified man pages
+ctop # Top-like interface for container metrics
